@@ -64,22 +64,24 @@ const Main = (props) => {
               <a>2 comments</a>
             </lis>
           </SocialCounts>
-          <button>
-            <img src="/images/like-icon.svg" height={"20px"} />
-            <span>Like</span>
-          </button>
-          <button>
-            <img src="/images/comments-icon.svg" height={"20px"} />
-            <span>Comments</span>
-          </button>
-          <button>
-            <img src="/images/share-icon.svg" height={"20px"} />
-            <span>Share</span>
-          </button>
-          <button>
-            <img src="/images/send-icon.svg" height={"20px"} />
-            <span>Send</span>
-          </button>
+          <SocialActions>
+            <button>
+              <img src="/images/like-icon.svg" height={"20px"} />
+              <span>Like</span>
+            </button>
+            <button>
+              <img src="/images/comments-icon.svg" height={"20px"} />
+              <span>Comments</span>
+            </button>
+            <button>
+              <img src="/images/share-icon.svg" height={"20px"} />
+              <span>Share</span>
+            </button>
+            <button>
+              <img src="/images/send-icon.svg" height={"20px"} />
+              <span>Send</span>
+            </button>
+          </SocialActions>
         </Article>
       </div>
     </Container>
@@ -260,6 +262,28 @@ const SocialCounts = styled.ul`
     font-size: 12px;
     button {
       display: flex;
+    }
+  }
+`;
+
+const SocialActions = styled.div`
+  align-items: center;
+  display: flex;
+
+  justify-content: flex-start;
+  min-height: 40px;
+  margin: 0;
+  padding: 8px;
+  button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    color: #0a66c2;
+
+    @media (min-width) {
+      span {
+        margin-left: 8px;
+      }
     }
   }
 `;
