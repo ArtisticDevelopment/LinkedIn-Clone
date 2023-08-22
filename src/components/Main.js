@@ -60,9 +60,9 @@ const Main = (props) => {
                 <span>75</span>
               </button>
             </li>
-            <lis>
+            <li>
               <a>2 comments</a>
-            </lis>
+            </li>
           </SocialCounts>
           <SocialActions>
             <button>

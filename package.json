@@ -16,6 +16,7 @@
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
     "reux": "^1.0.0",
+    "serve": "^14.2.1",
     "styled-components": "^5.3.11",
     "web-vitals": "^2.1.4"
   },
